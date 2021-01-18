@@ -1,0 +1,29 @@
+ <section class="section">
+
+   <div class="container">
+     <div> <b>First name: </b> <%= @user.first_name %></div>
+     <div> <b>Last name: </b>  <%= @user.last_name %> </div>
+
+     <!-- Left side -->
+
+     <nav class="level">
+       <div class="level-left">
+         <p class="level-item">
+           <strong>Actions</strong>
+         </p>
+       </div>
+
+       <!-- Right side -->
+
+       <div class="level-right">
+         <p class="level-item">
+           <%= link_to "Edit", edit_user_path(@user), class: "button" %>
+         </p>
+         <p class="level-item">
+           <%= link_to 'Delete', user_path(@user), method: :delete, data: {confirm: "Are you sure"} %>
+         </p>
+       </div>
+
+     </nav>
+   </div>
+ </section>

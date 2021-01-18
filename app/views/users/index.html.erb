@@ -1,0 +1,27 @@
+<h2 class="title">Users Index</h2>
+
+<!--<div>First name <%#=@first_name %></div>-->
+<!--<div>Last name <%#=@last_name %></div>-->
+<!--<div>Last name <%#=@user %></div>-->
+
+<div><b>Number of users: </b> <%= @counter %></div>
+
+<section class="section">
+  <div class="container">
+    <% @user.each do |user| %>
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title"><b>ID </b><%= user.id %></p>
+              <p class="title"><b>First name: </b><%= user.first_name %></p>
+            </div>
+          </div>
+          <div class="content"><b>Last name: </b> <%= user.last_name %> </div>
+        </div>
+        <br>
+    <% end %>
+    </div>
+  </div>
+  <br>
+</section>
