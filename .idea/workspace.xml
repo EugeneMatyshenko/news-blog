@@ -5,23 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d7af45d-b472-4619-9fc7-19c0dc89b79c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../NewsBlog/app/models/article.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NewsBlog/app/models/comment.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NewsBlog/app/models/like.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NewsBlog/app/models/tag.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../NewsBlog/config/initializers/devise.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NewsBlog/config/initializers/simple_form.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../NewsBlog/config/locales/devise.en.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NewsBlog/config/locales/simple_form.en.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118125331_devise_create_users.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118132049_add_test_field.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118132322_remove_test_field.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118132553_create_articles.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118133024_create_comments.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118134359_create_tags.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118134459_create_likes.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../NewsBlog/lib/templates/erb/scaffold/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewsBlog/.idea/EA_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/.idea/EA_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewsBlog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewsBlog/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewsBlog/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewsBlog/app/controllers/users_controller.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NewsBlog/app/models/user.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewsBlog/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/app/models/user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewsBlog/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/config/environments/development.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewsBlog/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118132322_remove_test_field.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118132322_remove_test_field.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118132553_create_articles.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118132553_create_articles.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118133024_create_comments.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118133024_create_comments.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118134359_create_tags.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118134359_create_tags.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118134459_create_likes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/db/migrate/20210118134459_create_likes.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewsBlog/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/../NewsBlog/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NewsBlog/spec/models/user_spec.rb" beforeDir="false" />
     </list>
@@ -34,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Ruby Class" />
+        <option value="Ruby File" />
       </list>
     </option>
   </component>
@@ -434,7 +442,7 @@
       <workItem from="1609154343502" duration="19460000" />
       <workItem from="1609248289696" duration="20373000" />
       <workItem from="1609837808109" duration="2544000" />
-      <workItem from="1609850810914" duration="40783000" />
+      <workItem from="1609850810914" duration="46210000" />
     </task>
     <servers />
   </component>
