@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d7af45d-b472-4619-9fc7-19c0dc89b79c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../NewsBlog/app/controllers/ArticleController.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../NewsBlog/app/models/tag.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../NewsBlog/config/initializers/devise.rb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../NewsBlog/config/initializers/simple_form.rb" afterDir="false" />
@@ -441,7 +442,7 @@
       <workItem from="1609154343502" duration="19460000" />
       <workItem from="1609248289696" duration="20373000" />
       <workItem from="1609837808109" duration="2544000" />
-      <workItem from="1609850810914" duration="51788000" />
+      <workItem from="1609850810914" duration="52894000" />
     </task>
     <servers />
   </component>
