@@ -1,0 +1,32 @@
+<h2>Articles</h2>
+
+<div><b>Comment: </b> <%= @test_field %></div>
+<section class="section">
+  <div class="container">
+    <% @article.each do |article| %>
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title"><b>Id: </b><%= article.id %></p>
+              <%#= link_to "!!View comments", "/articles/#{article.id}/comments/#{@comment.find_by_entity_id(article.entity_id).id }" %>
+              <%#= link_to "View comments", "/articles/#{article.id}/comments/#{@comment.find_by(entity: article).id }" %>
+              <%= link_to "View comments", article_comment_path(article, @comment.find_by(entity: article)) if @comment.find_by(entity: article).present? %>
+              <%#= link_to "!View comments", "/articles/#{article.id}/comments/#{@comment}" %>
+              <br>
+              <%#= link_to "View comments for this articles", "/articles/#{article.id}/comments/#{@comment}" %>
+              <br>
+              <%= link_to "Add a new comment", "/articles/#{article.id}/comments/new" %>
+              <p class="title"><b>Title: </b><%= article.title %></p>
+            </div>
+          </div>
+          <div class="content"><b>Body: </b> <%= article.body %> </div>
+        </div>
+        <br>
+    <% end %>
+
+    <%= link_to "Add a new article", new_article_path %>
+    </div>
+  </div>
+  <br>
+</section>

@@ -1,0 +1,26 @@
+
+
+<!--<section class="section">-->
+<!--  <div class="container">-->
+<%# @article.each do |article| %>
+<!--      <div class="card">-->
+<!--        <div class="card-content">-->
+<!--          <div class="media">-->
+<!--            <div class="media-content">-->
+<!--              <p class="title"><b>Id: </b><%#= article.id %></p>-->
+<!--              <p class="title"><b>Text: </b><%#= article.text %></p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <br>-->
+<%# end %>
+<!--    </div>-->
+<!--  </div>-->
+<!--  <br>-->
+<!--</section>-->
+
+<!--<div><strong>Article_id</strong><%#= @article.user_id %></div>-->
+
+<% content_for :page_title, "Edit article" %>
+
+<%= render 'form' %>

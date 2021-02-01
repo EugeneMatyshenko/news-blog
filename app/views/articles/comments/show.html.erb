@@ -1,0 +1,35 @@
+<h2>Show comments</h2>
+
+<!--<section class="section">-->
+
+<!--  <div class="container">-->
+<!--    <div><b>Id: </b> <%#= @comment.id %></div>-->
+<!--    <div><b>Text: </b>  <%#= @comment.text %> </div>-->
+<!--    <div><b>entity_id: </b>  <%#= @comment.entity_id %> </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+
+
+
+
+<section class="section">
+  <div class="container">
+    <% @comments.each do |comment| %>
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title"><b>Id: </b><%= comment.id %></p>
+              <p class="title"><b>Title: </b><%= comment.text %></p>
+            </div>
+          </div>
+          <div class="content"><b>Body: </b> <%= comment.entity_id %> </div>
+        </div>
+        <br>
+    <% end %>
+
+    </div>
+  </div>
+  <br>
+</section>

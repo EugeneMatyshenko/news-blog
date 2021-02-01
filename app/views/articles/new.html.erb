@@ -1,0 +1,15 @@
+<h1>New Articles</h1>
+
+<div class="section">
+  <%= simple_form_for(@article, url: articles_path) do |f| %>
+    <div class="field">
+      <div class="control">
+        <%#= f.input :user_id %>
+        <%= f.input :user_email %>
+        <%= f.input :title %>
+        <%= f.input :body %>
+        <%= f.button :submit, 'Create a new articles'%>
+      </div>
+    </div>
+  <% end %>
+</div>

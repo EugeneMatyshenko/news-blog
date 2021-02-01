@@ -1,0 +1,24 @@
+<h2 class="title">Index comments</h2>
+
+<section class="section">
+  <div class="container">
+    <% @comment.each do |comment| %>
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title"><b>Id: </b><%= comment.id %></p>
+              <p class="title"><b>Text: </b><%= comment.text %></p>
+              <p class="title"><b>Entity id: </b><%= comment.entity_id %></p>
+            </div>
+          </div>
+        </div>
+        <br>
+    <% end %>
+    </div>
+  </div>
+  <br>
+</section>
+
+<div> <b>Article id: </b> <%= @article_id %></div>
+<%#= link_to "View comments", "/articles/#{article.id}/comments/#{@comments.find_by_entity_id(article.id).id}" %>
