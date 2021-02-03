@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d7af45d-b472-4619-9fc7-19c0dc89b79c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/comments/comments_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/comment_comment_creator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/comments/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/comments/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/comments/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/articles/comments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/articles/comments_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/articles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/articles_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/comment_creator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/comment_creator.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/comments/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/comments/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/comments/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/comments/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/comments/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/comments/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/articles/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20201231095341_remove_active_from_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20201231095341_remove_active_from_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -464,7 +452,7 @@
       <workItem from="1611927663472" duration="1490000" />
       <workItem from="1612179291433" duration="615000" />
       <workItem from="1612185307320" duration="8000" />
-      <workItem from="1612272307606" duration="9824000" />
+      <workItem from="1612272307606" duration="11731000" />
     </task>
     <servers />
   </component>

@@ -23,6 +23,7 @@ class ArticlesController < ApplicationController
     user_id = @article.user_id
     path = "users.id = ".concat(user_id.to_s)
     @user_email = Article.joins(:user).where(path).select("email").first.email
+    @tags = Tag.where(user_id: user_id)
     # @test = Article.joins(:user).where("users.id = 5").select("email").first.email
   end
 

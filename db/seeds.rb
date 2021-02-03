@@ -43,6 +43,14 @@
 # end
 
 # Tag.create!(id: 1, user_id: 1, text: "cars 1")
+# tags = [:cars, :girls, :money]
+# Tag.all.each_with_index do |tag, index|
+#   Tag.find_or_create_by!(id: tag.id, user_id: tag.user_id, text: tags[index])
+# end
+tags = [:cars, :girls, :money]
+3.times do |i|
+  Tag.find_or_create_by!(id: i + 1, user_id: i + 1, text: tags[i])
+end
 
 3.times do |i|
   User.find_or_create_by!(email: "test#{i}@gmail.com") do |user|

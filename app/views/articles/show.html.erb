@@ -4,9 +4,12 @@
     <div><b>Title: </b> <%= @article.title %></div>
     <div><b>Body: </b>  <%= @article.body %> </div>
     <div><b>User email: </b>  <%= @user_email %> </div>
+    <% @tags.each do |tags| %>
+      <div class="card">
+        <p class="title"><b>Tags: </b><%= tags.text if tags.text.present? %></p>
+      </div>
+    <% end %>
     <br>
-    <div><b>Test field: </b>  <%= @test %> </div>
-<!--    <div><b>Test field2: </b>  <%#= @test.joins(:user).where(users: {user_id: 2}) %> </div>-->
 
     <!-- Left side -->
 
@@ -21,11 +24,11 @@
 
       <div class="level-right">
         <p class="level-item">
-          <%= link_to "Edit", edit_article_path(@article)%>
+          <%= link_to "Edit", edit_article_path(@article) %>
           <br>
           <%= link_to 'Delete', articles_path(@article), method: :delete, data: { confirm: "Are you sure" } %>
           <br>
-          <%= link_to 'Home', articles_path%>
+          <%= link_to 'Home', articles_path %>
           <br>
         </p>
       </div>
