@@ -16,7 +16,7 @@
               <br>
               <%#= link_to "View comments for this articles", "/articles/#{article.id}/comments/#{@comment}" %>
               <br>
-              <%= link_to "Add a new comment", "/articles/#{article.id}/comments/new" %>
+              <%= link_to "Add a new comment", new_article_comment_path(article.id) %>
               <p class="title"><b>Title: </b><%= article.title %></p>
             </div>
           </div>
@@ -29,4 +29,6 @@
     </div>
   </div>
   <br>
+  <%= link_to "Sign in", user_session_path %>
+  <%= link_to "Sign out", destroy_user_session_path %>
 </section>

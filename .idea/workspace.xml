@@ -5,29 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d7af45d-b472-4619-9fc7-19c0dc89b79c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/articles/comments_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/articles_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/article_with_user_email.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/article_creator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/comment_creator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/update_article_creator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/articles/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/articles/comments/create.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/articles/comments/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/articles/comments/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/articles/comments/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/articles/comments/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/articles/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/articles/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/articles/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/articles/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EA_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EA_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/comments/comments_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/comment_comment_creator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/comments/comments/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/comments/comments/new.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/comments/comments/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/ArticleController.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/article.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/article.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/articles/comments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/articles/comments_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/articles_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/articles_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/comment_creator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/comment_creator.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/comments/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/comments/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/comments/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/comments/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/comments/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/comments/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/articles/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/articles/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20201231095341_remove_active_from_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20201231095341_remove_active_from_users.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,12 +61,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/articles" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/services" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/services" />
       <recent name="$PROJECT_DIR$/app/views/articles" />
       <recent name="$PROJECT_DIR$/app/controllers/comments" />
       <recent name="$PROJECT_DIR$/app/views/comments" />
@@ -470,6 +463,8 @@
       <workItem from="1611925851945" duration="1490000" />
       <workItem from="1611927663472" duration="1490000" />
       <workItem from="1612179291433" duration="615000" />
+      <workItem from="1612185307320" duration="8000" />
+      <workItem from="1612272307606" duration="9824000" />
     </task>
     <servers />
   </component>
@@ -496,8 +491,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EA_test@User_scope_test.rcov" NAME="User scope test Coverage Results" MODIFIED="1609405253287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="EA_test" />
-    <SUITE FILE_PATH="coverage/EA_test@User_validation_test_should___.rcov" NAME="User validation test should... Coverage Results" MODIFIED="1609405241421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="EA_test" />
     <SUITE FILE_PATH="coverage/EA_test@User_scope_test_should_retu___.rcov" NAME="User scope test should retu... Coverage Results" MODIFIED="1609405281829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="EA_test" />
+    <SUITE FILE_PATH="coverage/EA_test@User_validation_test_should___.rcov" NAME="User validation test should... Coverage Results" MODIFIED="1609405241421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="EA_test" />
     <SUITE FILE_PATH="coverage/EA_test@User_scope_test_should_retu_____1_.rcov" NAME="User scope test should retu... (1) Coverage Results" MODIFIED="1609405290037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="EA_test" />
   </component>
 </project>

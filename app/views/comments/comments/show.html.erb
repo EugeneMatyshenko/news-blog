@@ -1,0 +1,19 @@
+<h2>Show comments of comments</h2>
+<section class="section">
+  <div class="container">
+    <% @comments.each do |comment| %>
+      <div class="card">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title"><b>comments: </b><%= comment.text %></p>
+            </div>
+          </div>
+        </div>
+    <% end %>
+    </div>
+  </div>
+
+
+
+</section>

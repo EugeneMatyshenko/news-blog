@@ -1,21 +1,5 @@
 <h2>Add a new comment</h2>
 
-<!--<div><b>@comment: </b> <%#= @comment %></div>-->
-
-<%#= form_with model: @comment do |form| %>
-<%#= form.text_field :user, placeholder: "user" %>
-<%#= form.text_field :text, placeholder: "text" %>
-
-<%#= form.submit %>
-<%# end %>
-
-<%#= form_for @comment do |form| %>
-<%#= form.text_field :user, placeholder: 'user' %>
-<%#= form.text_field :text, placeholder: 'text' %>
-<%#= form.submit %>
-<%# end %>
-
-
 <%= simple_form_for([@article, @comment]) do |f| %>
   <div class="field">
     <div class="control">
@@ -25,5 +9,5 @@
   </div>
 <% end %>
 
-errors: <%= @comment.errors.messages %>
+<!--errors: <%#= @comment.errors.messages %>-->
 </div>

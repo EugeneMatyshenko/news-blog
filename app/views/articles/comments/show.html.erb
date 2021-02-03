@@ -1,18 +1,4 @@
 <h2>Show comments</h2>
-
-<!--<section class="section">-->
-
-<!--  <div class="container">-->
-<!--    <div><b>Id: </b> <%#= @comment.id %></div>-->
-<!--    <div><b>Text: </b>  <%#= @comment.text %> </div>-->
-<!--    <div><b>entity_id: </b>  <%#= @comment.entity_id %> </div>-->
-<!--  </div>-->
-<!--</section>-->
-
-
-
-
-
 <section class="section">
   <div class="container">
     <% @comments.each do |comment| %>
@@ -20,16 +6,23 @@
         <div class="card-content">
           <div class="media">
             <div class="media-content">
-              <p class="title"><b>Id: </b><%= comment.id %></p>
-              <p class="title"><b>Title: </b><%= comment.text %></p>
+              <p class="title"><b>comment: </b><%= comment.text %></p>
+              <%= link_to "Add a new comment of this comment", new_comment_comment_path(comment.id) %>
             </div>
           </div>
-          <div class="content"><b>Body: </b> <%= comment.entity_id %> </div>
         </div>
-        <br>
+      <br>
     <% end %>
-
     </div>
   </div>
+
+  <%= simple_form_for([@article, @comment]) do |f| %>
+    <div class="field">
+      <div class="control">
+        <%= f.input :text %>
+        <%= f.button :submit, 'Create a new comment' %>
+      </div>
+    </div>
+  <% end %>
   <br>
 </section>
